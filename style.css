@@ -147,3 +147,38 @@ h1{
     background-color: #222;
     transition: all .3s;
 }
+
+/*Elementos del carrito de compras*/
+
+.lista-de-pedidos {
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border-top: solid thin grey;
+}
+
+.container nav i:hover .buy-card > .lista-de-pedidos {
+    display: flex;
+}
+
+.lista-de-pedidos img {
+    width: 100px;
+}
+
+.lista-de-pedidos p {
+    font-size: 1.3rem;
+    width: 300px;
+    text-align: center;
+}
+
+.lista-de-pedidos p:nth-child(4) {
+    padding-left: 40px;
+}
+
+.lista-de-pedidos p:last-child span {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+}
