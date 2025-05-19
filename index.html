@@ -2,109 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/57faba85b1.js" crossorigin="anonymous"></script>
+    <title>Ecommerce</title>
 </head>
 <body>
     <div class="container">
-        <nav>
-        <i class="fa-solid fa-cart-shopping">
-        <div class="buy-card">
-            <ul class="nav-card">
-                <li>Imagen</li>
-                <li>Nombre</li>
-                <li>Precio</li>
-                <li>Cantidad</li>
-                <li>Eliminar</li>
-            </ul>
-            <div class="lista-de-pedidos">
-                <img src="img/articulo1.jpg" alt="">
-                <p>Libros</p>
-                <p>$100</p>
-                <p>1</p>
-                <p><span>X</span></p>
-            </div>
-            <button>VACIAR CARRITO</button>
-        </div>
-        </i>
+        <nav id="carrito">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="buy-card">
+                    <ul class="nav-card">
+                        <li>Imagen</li>
+                        <li>Nombre</li>
+                        <li>Precio</li>
+                        <li>Cantidad</li>
+                        <li></li>
+                    </ul>
+                    <div class="lista_de_productos">
+                        
+                    </div>
+                    <button id="vaciar_carrito">VACIAR CARRITO</button>
+                </div>
+            </i>
         </nav>
-        <h1>Articulos</h1>
-        <div class="grid">
+        <h1>Articulos de Calidad</h1>
+        <div class="grid" id="lista-productos">
             <div class="items">
                 <img src="img/articulo1.jpg">
                 <div class="info">
-                    <h3>Libros</h3>
-                    <p>Libros de desarrolo personal</p>
+                    <h3>Libros de Matematica</h3>
+                    <p>Ultimas ediciones de matematica</p>
                     <div class="precio">
-                        <p>$100</p>
-                        <p>$50</p>
+                        <p>$300</p>
+                        <p class="descuento">$20</p>
                     </div>
-                    <button>Agregar al carrito</button>
+                    <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
                 </div>
             </div>
-             <div class="items">
+            <div class="items">
                 <img src="img/articulo2.jpg">
                 <div class="info">
-                    <h3>Lentes</h3>
-                    <p>Lentes paras mejorar tu lectura</p>
+                    <h3>Lentes de Lectura</h3>
+                    <p>Mejora la calidad de tu vision</p>
                     <div class="precio">
-                        <p>$100</p>
-                        <p>$60</p>
+                        <p>$300</p>
+                        <p class="descuento">$40</p>
                     </div>
-                    <button>Agregar al carrito</button>
+                    <button class="agregar-carrito" data-id="2">Agregar al Carrito</button>
                 </div>
             </div>
-             <div class="items">
+            <div class="items">
                 <img src="img/articulo3.jpg">
                 <div class="info">
                     <h3>Gorras</h3>
-                    <p>Gorras de deporte</p>
+                    <p>Gorrra de calidad</p>
                     <div class="precio">
-                        <p>$100</p>
-                        <p>$30</p>
+                        <p>$300</p>
+                        <p class="descuento">$15</p>
                     </div>
-                    <button>Agregar al carrito</button>
+                    <button class="agregar-carrito" data-id="3">Agregar al Carrito</button>
                 </div>
             </div>
-             <div class="items">
+            <div class="items">
                 <img src="img/articulo4.jpg">
                 <div class="info">
                     <h3>Laptop</h3>
-                    <p>Lo ultimo en tecnologia de la actualidad</p>
+                    <p>Computadora de ultima generacion</p>
                     <div class="precio">
-                        <p>$100</p>
-                        <p>$250</p>
+                        <p>$300</p>
+                        <p class="descuento">$250</p>
                     </div>
-                    <button>Agregar al carrito</button>
+                    <button class="agregar-carrito" data-id="4">Agregar al Carrito</button>
                 </div>
             </div>
-             <div class="items">
+            <div class="items">
                 <img src="img/articulo5.jpg">
                 <div class="info">
-                    <h3>Libros</h3>
-                    <p>Libros de desarrolo personal</p>
+                    <h3>Camisa de Caballero</h3>
+                    <p>Camisa de algodon</p>
                     <div class="precio">
-                        <p>$100</p>
-                        <p>$50</p>
+                        <p>$300</p>
+                        <p class="descuento">$30</p>
                     </div>
-                    <button>Agregar al carrito</button>
+                    <button class="agregar-carrito" data-id="5">Agregar al Carrito</button>
                 </div>
             </div>
-             <div class="items">
+            <div class="items">
                 <img src="img/articulo6.jpg">
                 <div class="info">
-                    <h3>Tablet</h3>
-                    <p>Tecnologia en tus manos </p>
+                    <h3>Tablet AIWA</h3>
+                    <p>Tablet de ultima generacion</p>
                     <div class="precio">
-                        <p>$100</p>
-                        <p>$50</p>
+                        <p>$300</p>
+                        <p class="descuento">$100</p>
                     </div>
-                    <button>Agregar al carrito</button>
+                    <button class="agregar-carrito" data-id="6">Agregar al Carrito</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
